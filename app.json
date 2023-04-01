@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "ChatGPT-4-Mobile",
-    "slug": "talk",
+    "slug": "chatgpt-4-mobile",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -11,7 +11,9 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.viveksharma.talk"
@@ -29,8 +31,9 @@
     },
     "extra": {
       "eas": {
-        "projectId": "cc037b85-88ca-4802-89bd-d0a15237684e"
+        "projectId": "57c12d9a-3fbb-409d-8f2c-412e241055d2"
       }
-    }
+    },
+    "owner": "viveks_7764"
   }
 }
