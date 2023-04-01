@@ -92,7 +92,7 @@ export default function App() {
         return updatedPrevMessages;
       });
 
-      if (tokenCount > 4090) {
+      if (tokenCount > 8150) {
         if (messages.length == 1) {
           setMessages([]);
         }
