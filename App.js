@@ -22,7 +22,7 @@ export default function App() {
   const [messages, setMessages] = useState([
     {
       role: "assistant",
-      content: "Hi there, how can I help?",
+      content: "Hi there, I am the more powerful GPT-4. How can I help?",
       id: Math.random().toString(),
     },
   ]);
@@ -43,7 +43,7 @@ export default function App() {
 
     const emptyResponseMessage = {
       id: Math.random().toString(),
-      content: "Thinking...",
+      content: "ChatGPT-4 Thinking...",
       role: "assistant",
     };
 
@@ -56,7 +56,7 @@ export default function App() {
     },400);
 
     const requestData = {
-      model: "gpt-3.5-turbo",
+      model: "gpt-4",
       messages: updatedMessage
       .map(({ id, ...rest }) => ({ ...rest })),
     };
@@ -123,7 +123,7 @@ export default function App() {
       <Header
         placement="center"
         centerComponent={{
-          text: "ChatGPT Mobile",
+          text: "ChatGPT-4 Mobile",
           style: styles.toolbarTitle,
         }}
         containerStyle={{
@@ -155,7 +155,7 @@ export default function App() {
                 ]}
               >
                 {item.role === "assistant" && (
-                  <Text style={styles.assistantTitle}>ChatGPT</Text>
+                  <Text style={styles.assistantTitle}>ChatGPT-4</Text>
                 )}
                 {item.role === "user" && (
                   <Text style={styles.userTitle}>You</Text>
