@@ -127,8 +127,8 @@ export default function App() {
           style: styles.toolbarTitle,
         }}
         containerStyle={{
-          backgroundColor: "#202d3a",
-          borderBottomColor: "#202d3a",
+          backgroundColor: "#000000",
+          borderBottomColor: "#67e4e5",
           borderBottomWidth: 1,
           marginTop: Platform.OS === "ios" ? Constants.statusBarHeight : 0,
           paddingTop: Platform.OS == "android" ? 35 : null
@@ -136,7 +136,7 @@ export default function App() {
       />
       <StatusBar
         barStyle="light-content"
-        backgroundColor="#202d3a"
+        backgroundColor="#000"
         style={styles.statusBar}
       />
 
@@ -183,7 +183,7 @@ export default function App() {
           placeholderTextColor="#657284"
         />
         <TouchableOpacity onPress={sendMessage}>
-          <Ionicons name="send" size={24} color="#fff" />
+          <Ionicons name="send" size={24} color="#67e4e5" />
         </TouchableOpacity>
       </View>
       
@@ -210,11 +210,11 @@ const styles = StyleSheet.create({
   messages: {
     flex: 1,
     padding: 10,
-    backgroundColor: "#13293D",
+    backgroundColor: "#000000",
   },
   message: {
     padding: 10,
-    backgroundColor: "#232e3b",
+    backgroundColor: "#053138",
     borderRadius: 10,
     marginBottom: 10,
     alignSelf: "flex-start",
@@ -222,16 +222,17 @@ const styles = StyleSheet.create({
   },
   assistantMessage: {
     alignSelf: "flex-end",
-    backgroundColor: "#3e6088",
+    backgroundColor: "#026270",
+    borderBottomColor: "#026270",
   },
   userTitle: {
-    color: "#8375ff",
+    color: "#24c6ff",
     fontSize: 10,
     fontWeight: "bold",
     marginBottom: 0,
   },
   assistantTitle: {
-    color: "#a1ffd6",
+    color: "#aafae2",
     fontSize: 10,
     fontWeight: "bold",
     marginBottom: 0,
@@ -244,7 +245,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     padding: 10,
-    backgroundColor: "#202d3a",
+    backgroundColor: "#0d1e24",
     marginBottom: Platform.OS === "ios" ? 5 : 0, // Add a 10px marginBottom for iOS devices
   },
   inputText: {
