@@ -24,7 +24,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.viveks_7764.chatgpt-4-mobile"
+      "package": "com.viveks_7764.chatgpt4mobile"
     },
     "web": {
       "favicon": "./assets/favicon.png"
