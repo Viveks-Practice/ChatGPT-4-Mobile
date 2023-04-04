@@ -22,7 +22,7 @@ export default function App() {
   const [messages, setMessages] = useState([
     {
       role: "assistant",
-      content: "Hi there, I am the more powerful GPT-4. How can I help?",
+      content: "Hi there, I am the more powerful Neo AI-4. I can think better, and handle longer conversations. But I am a bit slower, so please be patient with me. How can I help?",
       id: Math.random().toString(),
     },
   ]);
@@ -43,7 +43,7 @@ export default function App() {
 
     const emptyResponseMessage = {
       id: Math.random().toString(),
-      content: "ChatGPT-4 Thinking...",
+      content: "Neo-4 Thinking...",
       role: "assistant",
     };
 
@@ -116,14 +116,14 @@ export default function App() {
   }, [messages]);
 
   return (
-    <SafeAreaView
+    <KeyboardAvoidingView
       behavior={Platform.OS === "ios" ? "padding" : "height"}
       style={styles.container}
     >
       <Header
         placement="center"
         centerComponent={{
-          text: "ChatGPT-4 Mobile",
+          text: "Neo AI-4 Mobile",
           style: styles.toolbarTitle,
         }}
         containerStyle={{
@@ -155,7 +155,7 @@ export default function App() {
                 ]}
               >
                 {item.role === "assistant" && (
-                  <Text style={styles.assistantTitle}>ChatGPT-4</Text>
+                  <Text style={styles.assistantTitle}>Neo AI-4</Text>
                 )}
                 {item.role === "user" && (
                   <Text style={styles.userTitle}>You</Text>
@@ -187,13 +187,13 @@ export default function App() {
         </TouchableOpacity>
       </View>
       
-    </SafeAreaView>
+    </KeyboardAvoidingView>
   );
 }
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#161d27",
+    backgroundColor: "#000",
   },
   toolbarTitle: {
     fontWeight: "bold",
