@@ -16,7 +16,7 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.viveksharma.talk"
+      "bundleIdentifier": "com.viveksharma.chatgpt-4-mobile"
     },
     "android": {
       "versionCode": 1,
@@ -24,7 +24,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.viveks_7764.talk"
+      "package": "com.viveks_7764.chatgpt-4-mobile"
     },
     "web": {
       "favicon": "./assets/favicon.png"
